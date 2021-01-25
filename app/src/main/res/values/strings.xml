@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pet Corner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calendar_fragment">Calendar</string>
+    <string name="chat_fragment">Chat</string>
+    <string name="create_fragment">Create</string>
+    <string name="home_fragment">Home</string>
+    <string name="notification_fragment">Notifications</string>
+    <string name="make_a_new_friend">Make a new Friend</string>
+    <string name="getting_started_subtitle">Find the best pet in your location and get them in your arms</string>
+    <string name="lets_go">Let\'s go</string>
+    <string name="hello_msg">Hello, Aiman\nWelcome to Pet Corner</string>
+    <string name="hello_msg_name">Aiman</string>
+    <string name="search_pet">Search Pet</string>
+    <string name="pet_category">Pet Category</string>
+    <string name="cats">Cats</string>
+    <string name="lilly">Lilly</string>
+    <string name="cute_cat">Cute cat</string>
+</resources>
