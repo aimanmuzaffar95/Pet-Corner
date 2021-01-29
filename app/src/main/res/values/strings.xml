@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Pet Corner</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="calendar_fragment">Calendar</string>
     <string name="chat_fragment">Chat</string>
@@ -17,4 +16,7 @@
     <string name="cats">Cats</string>
     <string name="lilly">Lilly</string>
     <string name="cute_cat">Cute cat</string>
+    <string name="description">Description</string>
+    <string name="sample_pet_desc">"A cat is a best friend of you. My cat is really intelligent and naughty. Her grey eyes make her more adorable. I want to give her on adoption due to some of my personal issues and she needs attention that I am not able to give her properly now. "</string>
+    <string name="adopt">Adopt</string>
 </resources>

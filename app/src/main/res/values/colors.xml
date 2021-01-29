@@ -14,4 +14,6 @@
     <color name="colorTextBlack">#222222</color>
     <color name="pet_category_unselected">#F9F9F9</color>
     <color name="cat_desc_text_color">#ADADAD</color>
+    <color name="stroke_color">#CCCCCC</color>
+    <color name="text_grey">#5A5A5A</color>
 </resources>

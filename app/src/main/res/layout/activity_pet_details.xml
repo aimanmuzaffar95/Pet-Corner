@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_pet_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cat1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_pet_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/segoe_semibold"
+            android:textColor="@color/theme_purple"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_pet_image"
+            tools:text="Daisy" />
+
+        <TextView
+            android:id="@+id/tv_cat_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/segoe_ui"
+            android:textColor="@color/cat_desc_text_color"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_location"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pet_nick_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_pet_nick_name"
+            tools:ignore="UseCompatTextViewDrawableXml"
+            tools:text="10 Miles" />
+
+        <TextView
+            android:id="@+id/tv_pet_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe_ui"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_pet_nick_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pet_nick_name"
+            tools:text="Sweet Princess" />
+
+        <TextView
+            android:id="@+id/tv_pet_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe_ui_light"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_pet_subtitle"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pet_subtitle"
+            tools:text="Gender: Female" />
+
+
+        <TextView
+            android:id="@+id/tv_pet_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/pet_features_border"
+            android:minWidth="100dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_pet_gender"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pet_gender"
+            tools:text="Age: 6 Months" />
+
+        <TextView
+            android:id="@+id/tv_pet_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/pet_features_border"
+            android:minWidth="100dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pet_age"
+            app:layout_constraintStart_toEndOf="@+id/tv_pet_age"
+            app:layout_constraintTop_toTopOf="@+id/tv_pet_age"
+            tools:text="Length: 1 feet" />
+
+        <TextView
+            android:id="@+id/tv_pet_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/pet_features_border"
+            android:minWidth="100dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pet_length"
+            app:layout_constraintStart_toEndOf="@+id/tv_pet_length"
+            app:layout_constraintTop_toTopOf="@+id/tv_pet_length"
+            tools:text="Color: White" />
+
+        <TextView
+            android:id="@+id/tv_description_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/segoe_semibold"
+            android:text="@string/description"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pet_age" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/segoe_ui"
+            android:text="@string/sample_pet_desc"
+            android:textColor="@color/text_grey"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description_header" />
+
+        <Button
+            android:id="@+id/btn_adopt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/lets_go_btn_bg"
+            android:minWidth="160dp"
+            android:text="@string/adopt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

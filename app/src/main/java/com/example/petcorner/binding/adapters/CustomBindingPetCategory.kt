@@ -14,13 +14,15 @@ import com.example.petcorner.models.PetCategory
 
 @BindingAdapter("petAdapter")
 fun bindPetAdapter (recyclerView: RecyclerView, list: ArrayList<PetCategory>) {
-    if(list.isEmpty())
+    if (list.isEmpty())
         return
 
-    if(recyclerView.layoutManager == null) {
+    if (recyclerView.layoutManager == null) {
         recyclerView.layoutManager = LinearLayoutManager(recyclerView.context, RecyclerView.HORIZONTAL, false)
-        recyclerView.adapter = PetCategoryAdapter(recyclerView.context, list)
     }
+
+    recyclerView.adapter = PetCategoryAdapter(recyclerView.context, list)
+
 }
 
 @BindingAdapter("isSelected")

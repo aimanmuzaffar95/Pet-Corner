@@ -5,12 +5,26 @@
     xmlns:tools="http://schemas.android.com/tools">
     
     <data>
-        <import type="java.util.ArrayList"/>
-        <import type="com.example.petcorner.models.PetCategory"/>
-        
+
+        <import type="java.util.ArrayList" />
+
+        <import type="com.example.petcorner.models.PetCategory" />
+
+        <import type="com.example.petcorner.models.DataRepository" />
+
+        <import type="com.example.petcorner.models.PetModel" />
+
         <variable
             name="petCategoryList"
             type="ArrayList&lt;PetCategory>" />
+
+        <variable
+            name="dataRepository"
+            type="DataRepository" />
+
+        <variable
+            name="petList"
+            type="ArrayList&lt;PetModel>" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -116,6 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
+                petListAdapter="@{petList}"
                 android:layout_height="0dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
